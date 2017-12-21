@@ -1,4 +1,4 @@
-package com.slabs.parkingassist;
+package com.slabs.parkassist;
 
 import org.junit.Test;
 
