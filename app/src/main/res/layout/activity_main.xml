@@ -4,27 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.slabs.parkassist.MainActivity"
-    android:padding="5dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.slabs.parkassist.MainActivity">
 
     <TextView
+        android:background="#57ff54"
+        android:id="@+id/booknow"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Book a slot"
-        android:gravity="center_horizontal"
-        android:textStyle="bold"
-        android:textSize="25dp"/>
-
-    <ImageView
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/qrcode"
-        android:layout_width="200dp"
-        android:layout_height="200dp" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Book Now"
+        android:textSize="30dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scan the QR Code in the parking to continue.."/>
+        android:background="#485dff"
+        android:id="@+id/bookadvance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Book in Advance"
+        android:textSize="30dp" />
 
 </LinearLayout>
