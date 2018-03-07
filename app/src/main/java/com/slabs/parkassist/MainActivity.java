@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             HttpURLConnection urlConnection = null;
             StringBuffer response = new StringBuffer();
             try {
-                URL url = new URL("http://192.168.0.100/parkAssist/time.php");
+                URL url = new URL("http://"+ new Utils().url+"/parkAssist/time.php");
 
                 urlConnection = (HttpURLConnection) url.openConnection();
 
@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Long responseTime = System.currentTimeMillis() - startTime;
                 Log.d("trueTime", responseTime / 2 + "  " + String.valueOf(serverTime - responseTime / 2 - startTime));
                 editor.putLong("timeSync", (serverTime - responseTime / 2 - startTime));
+                editor.commit();
             }catch (Exception ignored){}
             super.onPostExecute(response);
         }

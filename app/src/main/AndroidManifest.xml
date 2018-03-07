@@ -3,6 +3,7 @@
     package="com.slabs.parkassist">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +22,10 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".BookNowActivity" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="YOUR_API_KEY"
+            />
     </application>
 
 </manifest>

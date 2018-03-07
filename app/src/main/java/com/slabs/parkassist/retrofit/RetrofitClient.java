@@ -2,6 +2,7 @@ package com.slabs.parkassist.retrofit;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.slabs.parkassist.Utils;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -12,7 +13,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
-    private static String baseUrl = "http://192.168.0.100/parkAssist/";
+    private static String baseUrl = "http://"+ new Utils().url+"" +
+            "/parkAssist/";
     private static Retrofit retrofit = null;
 
 

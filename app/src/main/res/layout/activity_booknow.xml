@@ -23,4 +23,10 @@
         android:text="Scan the QR Code in the parking to continue.."
         android:layout_gravity="center"/>
 
+    <Button
+        android:id="@+id/makePayment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Make Payment" />
+
 </LinearLayout>
